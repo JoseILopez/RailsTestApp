@@ -1,0 +1,18 @@
+<h1>Questions!</h1>
+<ul class="media-list">
+  <%= @questions.each do |question| %>
+    <li class="media">
+      <div class="media-left">
+        <img class="media-object" src="assets/qIcon.jpg" alt="Question">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><%= question.email %></h4>
+        <div><%= time_ago_in_words question.created_at %></div>
+        <%= question.body %>
+      </div>
+      <a href="<%= question_path(question) %>"?>
+        <button class="btn btn-info btn-xs">Answers</button>
+      </a>
+    </li>
+  <% end %>
+</ul>
