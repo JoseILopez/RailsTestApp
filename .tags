@@ -1,0 +1,12 @@
+AnswersController	/Users/JoseLopez/Documents/Ruby/QA/app/controllers/answers_controller.rb	/^class AnswersController < ApplicationController$/;"	class	line:1
+create	/Users/JoseLopez/Documents/Ruby/QA/app/controllers/answers_controller.rb	/^  def create$/;"	method	line:2	class:AnswersController
+answer_params	/Users/JoseLopez/Documents/Ruby/QA/app/controllers/answers_controller.rb	/^  def answer_params$/;"	method	line:15	class:AnswersController
+.navbar-text	/Users/JoseLopez/Documents/Ruby/QA/app/assets/stylesheets/home.scss	/^.navbar-text {$/;"	function	line:5
+.question-box	/Users/JoseLopez/Documents/Ruby/QA/app/assets/stylesheets/home.scss	/^.question-box {$/;"	function	line:9
+.media	/Users/JoseLopez/Documents/Ruby/QA/app/assets/stylesheets/home.scss	/^  .media {$/;"	function	line:10
+.answer-button	/Users/JoseLopez/Documents/Ruby/QA/app/assets/stylesheets/home.scss	/^      .answer-button {$/;"	function	line:11
+&:hover	/Users/JoseLopez/Documents/Ruby/QA/app/assets/stylesheets/home.scss	/^      &:hover {$/;"	function	line:17
+.media	/Users/JoseLopez/Documents/Ruby/QA/app/assets/stylesheets/home.scss	/^.media {$/;"	function	line:24
+.media-heading	/Users/JoseLopez/Documents/Ruby/QA/app/assets/stylesheets/home.scss	/^    .media-heading {$/;"	function	line:32
+.time-stamp	/Users/JoseLopez/Documents/Ruby/QA/app/assets/stylesheets/home.scss	/^    .time-stamp {$/;"	function	line:36
+ready	/Users/JoseLopez/Documents/Ruby/QA/app/assets/javascripts/home.coffee	/^ready = ->$/;"	function	line:5

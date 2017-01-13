@@ -1,0 +1,17 @@
+I"5(function() {
+  var ready;
+
+  ready = function() {
+    return $(".question-box .media").click(function() {
+      console.log("target");
+      document.location = $(this).data("target");
+      return false;
+    });
+  };
+
+  $(document).ready(ready);
+
+  $(document).on("turbolinks:load", ready);
+
+}).call(this);
+:ET

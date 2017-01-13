@@ -1,15 +1,18 @@
 class AnswersController < ApplicationController
   def create
-    Answer.create(question_params)
+    question = Question.find(params[:answer][:question_id])
+    question.answers.create(answer_params)
 
-    redirect_to root_path
+    session[:user_email] = answer_params[:email]
+
+    redirect_to question
   end
 
   # Need to define question_params to avoid security issues
 
   private
 
-  def question_params
-    params.require(:answer).permit(:q_id, :email, :body)
+  def answer_params
+    params.require(:answer).permit(:question_id, :email, :body)
   end
 end

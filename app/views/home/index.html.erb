@@ -1,18 +1,28 @@
-<h1>Questions!</h1>
+<div class="lead well">
+  <h1>Q&A</h1>
+  <p>Add questions and receive answers!</p>
+</div>
+
 <ul class="media-list">
-  <%= @questions.each do |question| %>
-    <li class="media">
-      <div class="media-left">
-        <img class="media-object" src="assets/qIcon.jpg" alt="Question">
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading"><%= question.email %></h4>
-        <div><%= time_ago_in_words question.created_at %></div>
-        <%= question.body %>
-      </div>
-      <a href="<%= question_path(question) %>"?>
-        <button class="btn btn-info btn-xs">Answers</button>
-      </a>
-    </li>
+  <% @questions.each do |question| %>
+    <div class="question-box">
+      <li class="media" data-target="<%= question_path(question) %>">
+        <div class="media-left">
+          <img class="media-object" src="assets/qIcon.jpg" alt="Question">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading"><%= question.email %></h4>
+          <div class="time-stamp"><small><%= time_ago_in_words question.created_at %></small></div>
+          <%= question.body %>
+        </div>
+        <a class="answer-button hidden-xs" href="<%= question_path(question) %>"?>
+          <button class="btn btn-info btn-xs">Answers</button>
+        </a>
+      </li>
+    </div>
+  <% end %>
+
+  <% if @questions.empty? %>
+  <div class="alert alert-info">Nothing here yet</div>
   <% end %>
 </ul>
